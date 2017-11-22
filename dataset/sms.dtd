@@ -1,0 +1,22 @@
+<!ELEMENT smses (sms+)>
+<!ATTLIST smses
+          backup_date CDATA #REQUIRED
+          backup_set CDATA #REQUIRED
+          count CDATA #REQUIRED>
+<!ELEMENT sms (#PCDATA)>
+<!ATTLIST sms
+          address CDATA #REQUIRED
+          body CDATA #REQUIRED
+          contact_name CDATA #REQUIRED
+          date CDATA #REQUIRED
+          date_sent CDATA #REQUIRED
+          locked CDATA #REQUIRED
+          protocol CDATA #REQUIRED
+          read CDATA #REQUIRED
+          readable_date CDATA #REQUIRED
+          sc_toa CDATA #REQUIRED
+          service_center CDATA #REQUIRED
+          status CDATA #REQUIRED
+          subject CDATA #REQUIRED
+          toa CDATA #REQUIRED
+          type CDATA #REQUIRED>
