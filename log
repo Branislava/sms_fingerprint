@@ -1,0 +1,1255 @@
+Uplacena Vam je Express dopuna od 60,00 din. Iznos dopune uz naknadu od 7,20 din. bice naplacen kada budete imali dovoljno kredita. Molimo Vas dopunite kredit.
+address                                                                  2020
+type                                                                        1
+body                        Uplacena Vam je Express dopuna od 60,00 din. I...
+happy                                                                       0
+sad                                                                         0
+kiss                                                                        0
+wink                                                                        0
+smiley                                                                      0
+skeptic                                                                     0
+glued_sents                                                                 3
+umlauts                                                                     0
+cyrilic:                                                                    0
+lowercase                                                                 115
+diacritics                                                                  0
+dot                                                                         4
+number                                                                      7
+exclamation_mark                                                            0
+spaces_after_punctuation                                                    3
+comma                                                                       2
+uppercase                                                                   6
+question_mark                                                               0
+consecutive_characters                                                      2
+Name: 832, dtype: object
+...selecting top features
+Selected 19 features: happy, sad, kiss, wink, smiley, skeptic, glued_sents, umlauts, cyrilic:, lowercase, diacritics, dot, number, exclamation_mark, spaces_after_punctuation, comma, uppercase, question_mark, consecutive_characters
+Activation identity, Solver lbfgs, Random state 0, tols 0.100000, Warm start True
+[[403 242]
+ [142 272]]
+             precision    recall  f1-score   support
+
+          1       0.74      0.62      0.68       645
+          2       0.53      0.66      0.59       414
+
+avg / total       0.66      0.64      0.64      1059
+
+Activation identity, Solver lbfgs, Random state 0, tols 0.100000, Warm start False
+[[403 242]
+ [142 272]]
+             precision    recall  f1-score   support
+
+          1       0.74      0.62      0.68       645
+          2       0.53      0.66      0.59       414
+
+avg / total       0.66      0.64      0.64      1059
+
+Activation identity, Solver lbfgs, Random state 0, tols 0.010000, Warm start True
+[[512 133]
+ [164 250]]
+             precision    recall  f1-score   support
+
+          1       0.76      0.79      0.78       645
+          2       0.65      0.60      0.63       414
+
+avg / total       0.72      0.72      0.72      1059
+
+Activation identity, Solver lbfgs, Random state 0, tols 0.010000, Warm start False
+[[512 133]
+ [164 250]]
+             precision    recall  f1-score   support
+
+          1       0.76      0.79      0.78       645
+          2       0.65      0.60      0.63       414
+
+avg / total       0.72      0.72      0.72      1059
+
+Activation identity, Solver lbfgs, Random state 0, tols 0.001000, Warm start True
+[[508 137]
+ [150 264]]
+             precision    recall  f1-score   support
+
+          1       0.77      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver lbfgs, Random state 0, tols 0.001000, Warm start False
+[[508 137]
+ [150 264]]
+             precision    recall  f1-score   support
+
+          1       0.77      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver lbfgs, Random state 0, tols 0.000100, Warm start True
+[[507 138]
+ [150 264]]
+             precision    recall  f1-score   support
+
+          1       0.77      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver lbfgs, Random state 0, tols 0.000100, Warm start False
+[[507 138]
+ [150 264]]
+             precision    recall  f1-score   support
+
+          1       0.77      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver lbfgs, Random state 1, tols 0.100000, Warm start True
+[[510 135]
+ [230 184]]
+             precision    recall  f1-score   support
+
+          1       0.69      0.79      0.74       645
+          2       0.58      0.44      0.50       414
+
+avg / total       0.65      0.66      0.64      1059
+
+Activation identity, Solver lbfgs, Random state 1, tols 0.100000, Warm start False
+[[510 135]
+ [230 184]]
+             precision    recall  f1-score   support
+
+          1       0.69      0.79      0.74       645
+          2       0.58      0.44      0.50       414
+
+avg / total       0.65      0.66      0.64      1059
+
+Activation identity, Solver lbfgs, Random state 1, tols 0.010000, Warm start True
+[[524 121]
+ [189 225]]
+             precision    recall  f1-score   support
+
+          1       0.73      0.81      0.77       645
+          2       0.65      0.54      0.59       414
+
+avg / total       0.70      0.71      0.70      1059
+
+Activation identity, Solver lbfgs, Random state 1, tols 0.010000, Warm start False
+[[524 121]
+ [189 225]]
+             precision    recall  f1-score   support
+
+          1       0.73      0.81      0.77       645
+          2       0.65      0.54      0.59       414
+
+avg / total       0.70      0.71      0.70      1059
+
+Activation identity, Solver lbfgs, Random state 1, tols 0.001000, Warm start True
+[[507 138]
+ [150 264]]
+             precision    recall  f1-score   support
+
+          1       0.77      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver lbfgs, Random state 1, tols 0.001000, Warm start False
+[[507 138]
+ [150 264]]
+             precision    recall  f1-score   support
+
+          1       0.77      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver lbfgs, Random state 1, tols 0.000100, Warm start True
+[[507 138]
+ [150 264]]
+             precision    recall  f1-score   support
+
+          1       0.77      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver lbfgs, Random state 1, tols 0.000100, Warm start False
+[[507 138]
+ [150 264]]
+             precision    recall  f1-score   support
+
+          1       0.77      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver sgd, Random state 0, tols 0.100000, Warm start True
+[[527 118]
+ [226 188]]
+             precision    recall  f1-score   support
+
+          1       0.70      0.82      0.75       645
+          2       0.61      0.45      0.52       414
+
+avg / total       0.67      0.68      0.66      1059
+
+Activation identity, Solver sgd, Random state 0, tols 0.100000, Warm start False
+[[527 118]
+ [226 188]]
+             precision    recall  f1-score   support
+
+          1       0.70      0.82      0.75       645
+          2       0.61      0.45      0.52       414
+
+avg / total       0.67      0.68      0.66      1059
+
+Activation identity, Solver sgd, Random state 0, tols 0.010000, Warm start True
+[[532 113]
+ [234 180]]
+             precision    recall  f1-score   support
+
+          1       0.69      0.82      0.75       645
+          2       0.61      0.43      0.51       414
+
+avg / total       0.66      0.67      0.66      1059
+
+Activation identity, Solver sgd, Random state 0, tols 0.010000, Warm start False
+[[532 113]
+ [234 180]]
+             precision    recall  f1-score   support
+
+          1       0.69      0.82      0.75       645
+          2       0.61      0.43      0.51       414
+
+avg / total       0.66      0.67      0.66      1059
+
+Activation identity, Solver sgd, Random state 0, tols 0.001000, Warm start True
+[[526 119]
+ [182 232]]
+             precision    recall  f1-score   support
+
+          1       0.74      0.82      0.78       645
+          2       0.66      0.56      0.61       414
+
+avg / total       0.71      0.72      0.71      1059
+
+Activation identity, Solver sgd, Random state 0, tols 0.001000, Warm start False
+[[526 119]
+ [182 232]]
+             precision    recall  f1-score   support
+
+          1       0.74      0.82      0.78       645
+          2       0.66      0.56      0.61       414
+
+avg / total       0.71      0.72      0.71      1059
+
+Activation identity, Solver sgd, Random state 0, tols 0.000100, Warm start True
+[[511 134]
+ [156 258]]
+             precision    recall  f1-score   support
+
+          1       0.77      0.79      0.78       645
+          2       0.66      0.62      0.64       414
+
+avg / total       0.72      0.73      0.72      1059
+
+Activation identity, Solver sgd, Random state 0, tols 0.000100, Warm start False
+[[511 134]
+ [156 258]]
+             precision    recall  f1-score   support
+
+          1       0.77      0.79      0.78       645
+          2       0.66      0.62      0.64       414
+
+avg / total       0.72      0.73      0.72      1059
+
+Activation identity, Solver sgd, Random state 1, tols 0.100000, Warm start True
+[[502 143]
+ [241 173]]
+             precision    recall  f1-score   support
+
+          1       0.68      0.78      0.72       645
+          2       0.55      0.42      0.47       414
+
+avg / total       0.63      0.64      0.63      1059
+
+Activation identity, Solver sgd, Random state 1, tols 0.100000, Warm start False
+[[502 143]
+ [241 173]]
+             precision    recall  f1-score   support
+
+          1       0.68      0.78      0.72       645
+          2       0.55      0.42      0.47       414
+
+avg / total       0.63      0.64      0.63      1059
+
+Activation identity, Solver sgd, Random state 1, tols 0.010000, Warm start True
+[[507 138]
+ [227 187]]
+             precision    recall  f1-score   support
+
+          1       0.69      0.79      0.74       645
+          2       0.58      0.45      0.51       414
+
+avg / total       0.65      0.66      0.65      1059
+
+Activation identity, Solver sgd, Random state 1, tols 0.010000, Warm start False
+[[507 138]
+ [227 187]]
+             precision    recall  f1-score   support
+
+          1       0.69      0.79      0.74       645
+          2       0.58      0.45      0.51       414
+
+avg / total       0.65      0.66      0.65      1059
+
+Activation identity, Solver sgd, Random state 1, tols 0.001000, Warm start True
+[[528 117]
+ [204 210]]
+             precision    recall  f1-score   support
+
+          1       0.72      0.82      0.77       645
+          2       0.64      0.51      0.57       414
+
+avg / total       0.69      0.70      0.69      1059
+
+Activation identity, Solver sgd, Random state 1, tols 0.001000, Warm start False
+[[528 117]
+ [204 210]]
+             precision    recall  f1-score   support
+
+          1       0.72      0.82      0.77       645
+          2       0.64      0.51      0.57       414
+
+avg / total       0.69      0.70      0.69      1059
+
+Activation identity, Solver sgd, Random state 1, tols 0.000100, Warm start True
+[[510 135]
+ [150 264]]
+             precision    recall  f1-score   support
+
+          1       0.77      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver sgd, Random state 1, tols 0.000100, Warm start False
+[[510 135]
+ [150 264]]
+             precision    recall  f1-score   support
+
+          1       0.77      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver adam, Random state 0, tols 0.100000, Warm start True
+[[541 104]
+ [215 199]]
+             precision    recall  f1-score   support
+
+          1       0.72      0.84      0.77       645
+          2       0.66      0.48      0.56       414
+
+avg / total       0.69      0.70      0.69      1059
+
+Activation identity, Solver adam, Random state 0, tols 0.100000, Warm start False
+[[541 104]
+ [215 199]]
+             precision    recall  f1-score   support
+
+          1       0.72      0.84      0.77       645
+          2       0.66      0.48      0.56       414
+
+avg / total       0.69      0.70      0.69      1059
+
+Activation identity, Solver adam, Random state 0, tols 0.010000, Warm start True
+[[537 108]
+ [199 215]]
+             precision    recall  f1-score   support
+
+          1       0.73      0.83      0.78       645
+          2       0.67      0.52      0.58       414
+
+avg / total       0.70      0.71      0.70      1059
+
+Activation identity, Solver adam, Random state 0, tols 0.010000, Warm start False
+[[537 108]
+ [199 215]]
+             precision    recall  f1-score   support
+
+          1       0.73      0.83      0.78       645
+          2       0.67      0.52      0.58       414
+
+avg / total       0.70      0.71      0.70      1059
+
+Activation identity, Solver adam, Random state 0, tols 0.001000, Warm start True
+[[495 150]
+ [134 280]]
+             precision    recall  f1-score   support
+
+          1       0.79      0.77      0.78       645
+          2       0.65      0.68      0.66       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver adam, Random state 0, tols 0.001000, Warm start False
+[[495 150]
+ [134 280]]
+             precision    recall  f1-score   support
+
+          1       0.79      0.77      0.78       645
+          2       0.65      0.68      0.66       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver adam, Random state 0, tols 0.000100, Warm start True
+[[488 157]
+ [127 287]]
+             precision    recall  f1-score   support
+
+          1       0.79      0.76      0.77       645
+          2       0.65      0.69      0.67       414
+
+avg / total       0.74      0.73      0.73      1059
+
+Activation identity, Solver adam, Random state 0, tols 0.000100, Warm start False
+[[488 157]
+ [127 287]]
+             precision    recall  f1-score   support
+
+          1       0.79      0.76      0.77       645
+          2       0.65      0.69      0.67       414
+
+avg / total       0.74      0.73      0.73      1059
+
+Activation identity, Solver adam, Random state 1, tols 0.100000, Warm start True
+[[487 158]
+ [182 232]]
+             precision    recall  f1-score   support
+
+          1       0.73      0.76      0.74       645
+          2       0.59      0.56      0.58       414
+
+avg / total       0.68      0.68      0.68      1059
+
+Activation identity, Solver adam, Random state 1, tols 0.100000, Warm start False
+[[487 158]
+ [182 232]]
+             precision    recall  f1-score   support
+
+          1       0.73      0.76      0.74       645
+          2       0.59      0.56      0.58       414
+
+avg / total       0.68      0.68      0.68      1059
+
+Activation identity, Solver adam, Random state 1, tols 0.010000, Warm start True
+[[523 122]
+ [185 229]]
+             precision    recall  f1-score   support
+
+          1       0.74      0.81      0.77       645
+          2       0.65      0.55      0.60       414
+
+avg / total       0.70      0.71      0.70      1059
+
+Activation identity, Solver adam, Random state 1, tols 0.010000, Warm start False
+[[523 122]
+ [185 229]]
+             precision    recall  f1-score   support
+
+          1       0.74      0.81      0.77       645
+          2       0.65      0.55      0.60       414
+
+avg / total       0.70      0.71      0.70      1059
+
+Activation identity, Solver adam, Random state 1, tols 0.001000, Warm start True
+[[531 114]
+ [170 244]]
+             precision    recall  f1-score   support
+
+          1       0.76      0.82      0.79       645
+          2       0.68      0.59      0.63       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver adam, Random state 1, tols 0.001000, Warm start False
+[[531 114]
+ [170 244]]
+             precision    recall  f1-score   support
+
+          1       0.76      0.82      0.79       645
+          2       0.68      0.59      0.63       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver adam, Random state 1, tols 0.000100, Warm start True
+[[531 114]
+ [170 244]]
+             precision    recall  f1-score   support
+
+          1       0.76      0.82      0.79       645
+          2       0.68      0.59      0.63       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation identity, Solver adam, Random state 1, tols 0.000100, Warm start False
+[[531 114]
+ [170 244]]
+             precision    recall  f1-score   support
+
+          1       0.76      0.82      0.79       645
+          2       0.68      0.59      0.63       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation logistic, Solver lbfgs, Random state 0, tols 0.100000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver lbfgs, Random state 0, tols 0.100000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver lbfgs, Random state 0, tols 0.010000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver lbfgs, Random state 0, tols 0.010000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver lbfgs, Random state 0, tols 0.001000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver lbfgs, Random state 0, tols 0.001000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver lbfgs, Random state 0, tols 0.000100, Warm start True
+[[501 144]
+ [155 259]]
+             precision    recall  f1-score   support
+
+          1       0.76      0.78      0.77       645
+          2       0.64      0.63      0.63       414
+
+avg / total       0.72      0.72      0.72      1059
+
+Activation logistic, Solver lbfgs, Random state 0, tols 0.000100, Warm start False
+[[501 144]
+ [155 259]]
+             precision    recall  f1-score   support
+
+          1       0.76      0.78      0.77       645
+          2       0.64      0.63      0.63       414
+
+avg / total       0.72      0.72      0.72      1059
+
+Activation logistic, Solver lbfgs, Random state 1, tols 0.100000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver lbfgs, Random state 1, tols 0.100000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver lbfgs, Random state 1, tols 0.010000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver lbfgs, Random state 1, tols 0.010000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver lbfgs, Random state 1, tols 0.001000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver lbfgs, Random state 1, tols 0.001000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver lbfgs, Random state 1, tols 0.000100, Warm start True
+[[503 142]
+ [134 280]]
+             precision    recall  f1-score   support
+
+          1       0.79      0.78      0.78       645
+          2       0.66      0.68      0.67       414
+
+avg / total       0.74      0.74      0.74      1059
+
+Activation logistic, Solver lbfgs, Random state 1, tols 0.000100, Warm start False
+[[503 142]
+ [134 280]]
+             precision    recall  f1-score   support
+
+          1       0.79      0.78      0.78       645
+          2       0.66      0.68      0.67       414
+
+avg / total       0.74      0.74      0.74      1059
+
+Activation logistic, Solver sgd, Random state 0, tols 0.100000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 0, tols 0.100000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 0, tols 0.010000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 0, tols 0.010000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 0, tols 0.001000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 0, tols 0.001000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 0, tols 0.000100, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 0, tols 0.000100, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 1, tols 0.100000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 1, tols 0.100000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 1, tols 0.010000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 1, tols 0.010000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 1, tols 0.001000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 1, tols 0.001000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 1, tols 0.000100, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver sgd, Random state 1, tols 0.000100, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver adam, Random state 0, tols 0.100000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver adam, Random state 0, tols 0.100000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver adam, Random state 0, tols 0.010000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver adam, Random state 0, tols 0.010000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver adam, Random state 0, tols 0.001000, Warm start True
+[[492 153]
+ [120 294]]
+             precision    recall  f1-score   support
+
+          1       0.80      0.76      0.78       645
+          2       0.66      0.71      0.68       414
+
+avg / total       0.75      0.74      0.74      1059
+
+Activation logistic, Solver adam, Random state 0, tols 0.001000, Warm start False
+[[492 153]
+ [120 294]]
+             precision    recall  f1-score   support
+
+          1       0.80      0.76      0.78       645
+          2       0.66      0.71      0.68       414
+
+avg / total       0.75      0.74      0.74      1059
+
+Activation logistic, Solver adam, Random state 0, tols 0.000100, Warm start True
+[[550  95]
+ [191 223]]
+             precision    recall  f1-score   support
+
+          1       0.74      0.85      0.79       645
+          2       0.70      0.54      0.61       414
+
+avg / total       0.73      0.73      0.72      1059
+
+Activation logistic, Solver adam, Random state 0, tols 0.000100, Warm start False
+[[550  95]
+ [191 223]]
+             precision    recall  f1-score   support
+
+          1       0.74      0.85      0.79       645
+          2       0.70      0.54      0.61       414
+
+avg / total       0.73      0.73      0.72      1059
+
+Activation logistic, Solver adam, Random state 1, tols 0.100000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver adam, Random state 1, tols 0.100000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver adam, Random state 1, tols 0.010000, Warm start True
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver adam, Random state 1, tols 0.010000, Warm start False
+[[645   0]
+ [414   0]]
+             precision    recall  f1-score   support
+
+          1       0.61      1.00      0.76       645
+          2       0.00      0.00      0.00       414
+
+avg / total       0.37      0.61      0.46      1059
+
+Activation logistic, Solver adam, Random state 1, tols 0.001000, Warm start True
+[[468 177]
+ [103 311]]
+             precision    recall  f1-score   support
+
+          1       0.82      0.73      0.77       645
+          2       0.64      0.75      0.69       414
+
+avg / total       0.75      0.74      0.74      1059
+
+Activation logistic, Solver adam, Random state 1, tols 0.001000, Warm start False
+[[468 177]
+ [103 311]]
+             precision    recall  f1-score   support
+
+          1       0.82      0.73      0.77       645
+          2       0.64      0.75      0.69       414
+
+avg / total       0.75      0.74      0.74      1059
+
+Activation logistic, Solver adam, Random state 1, tols 0.000100, Warm start True
+[[545 100]
+ [176 238]]
+             precision    recall  f1-score   support
+
+          1       0.76      0.84      0.80       645
+          2       0.70      0.57      0.63       414
+
+avg / total       0.74      0.74      0.73      1059
+
+Activation logistic, Solver adam, Random state 1, tols 0.000100, Warm start False
+[[545 100]
+ [176 238]]
+             precision    recall  f1-score   support
+
+          1       0.76      0.84      0.80       645
+          2       0.70      0.57      0.63       414
+
+avg / total       0.74      0.74      0.73      1059
+
+Activation tanh, Solver lbfgs, Random state 0, tols 0.100000, Warm start True
+[[438 207]
+ [189 225]]
+             precision    recall  f1-score   support
+
+          1       0.70      0.68      0.69       645
+          2       0.52      0.54      0.53       414
+
+avg / total       0.63      0.63      0.63      1059
+
+Activation tanh, Solver lbfgs, Random state 0, tols 0.100000, Warm start False
+[[438 207]
+ [189 225]]
+             precision    recall  f1-score   support
+
+          1       0.70      0.68      0.69       645
+          2       0.52      0.54      0.53       414
+
+avg / total       0.63      0.63      0.63      1059
+
+Activation tanh, Solver lbfgs, Random state 0, tols 0.010000, Warm start True
+[[510 135]
+ [159 255]]
+             precision    recall  f1-score   support
+
+          1       0.76      0.79      0.78       645
+          2       0.65      0.62      0.63       414
+
+avg / total       0.72      0.72      0.72      1059
+
+Activation tanh, Solver lbfgs, Random state 0, tols 0.010000, Warm start False
+[[510 135]
+ [159 255]]
+             precision    recall  f1-score   support
+
+          1       0.76      0.79      0.78       645
+          2       0.65      0.62      0.63       414
+
+avg / total       0.72      0.72      0.72      1059
+
+Activation tanh, Solver lbfgs, Random state 0, tols 0.001000, Warm start True
+[[491 154]
+ [141 273]]
+             precision    recall  f1-score   support
+
+          1       0.78      0.76      0.77       645
+          2       0.64      0.66      0.65       414
+
+avg / total       0.72      0.72      0.72      1059
+
+Activation tanh, Solver lbfgs, Random state 0, tols 0.001000, Warm start False
+[[491 154]
+ [141 273]]
+             precision    recall  f1-score   support
+
+          1       0.78      0.76      0.77       645
+          2       0.64      0.66      0.65       414
+
+avg / total       0.72      0.72      0.72      1059
+
+Activation tanh, Solver lbfgs, Random state 0, tols 0.000100, Warm start True
+[[491 154]
+ [141 273]]
+             precision    recall  f1-score   support
+
+          1       0.78      0.76      0.77       645
+          2       0.64      0.66      0.65       414
+
+avg / total       0.72      0.72      0.72      1059
+
+Activation tanh, Solver lbfgs, Random state 0, tols 0.000100, Warm start False
+[[491 154]
+ [141 273]]
+             precision    recall  f1-score   support
+
+          1       0.78      0.76      0.77       645
+          2       0.64      0.66      0.65       414
+
+avg / total       0.72      0.72      0.72      1059
+
+Activation tanh, Solver lbfgs, Random state 1, tols 0.100000, Warm start True
+[[379 266]
+ [323  91]]
+             precision    recall  f1-score   support
+
+          1       0.54      0.59      0.56       645
+          2       0.25      0.22      0.24       414
+
+avg / total       0.43      0.44      0.44      1059
+
+Activation tanh, Solver lbfgs, Random state 1, tols 0.100000, Warm start False
+[[379 266]
+ [323  91]]
+             precision    recall  f1-score   support
+
+          1       0.54      0.59      0.56       645
+          2       0.25      0.22      0.24       414
+
+avg / total       0.43      0.44      0.44      1059
+
+Activation tanh, Solver lbfgs, Random state 1, tols 0.010000, Warm start True
+[[491 154]
+ [142 272]]
+             precision    recall  f1-score   support
+
+          1       0.78      0.76      0.77       645
+          2       0.64      0.66      0.65       414
+
+avg / total       0.72      0.72      0.72      1059
+
+Activation tanh, Solver lbfgs, Random state 1, tols 0.010000, Warm start False
+[[491 154]
+ [142 272]]
+             precision    recall  f1-score   support
+
+          1       0.78      0.76      0.77       645
+          2       0.64      0.66      0.65       414
+
+avg / total       0.72      0.72      0.72      1059
+
+Activation tanh, Solver lbfgs, Random state 1, tols 0.001000, Warm start True
+[[510 135]
+ [148 266]]
+             precision    recall  f1-score   support
+
+          1       0.78      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation tanh, Solver lbfgs, Random state 1, tols 0.001000, Warm start False
+[[510 135]
+ [148 266]]
+             precision    recall  f1-score   support
+
+          1       0.78      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation tanh, Solver lbfgs, Random state 1, tols 0.000100, Warm start True
+[[510 135]
+ [148 266]]
+             precision    recall  f1-score   support
+
+          1       0.78      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation tanh, Solver lbfgs, Random state 1, tols 0.000100, Warm start False
+[[510 135]
+ [148 266]]
+             precision    recall  f1-score   support
+
+          1       0.78      0.79      0.78       645
+          2       0.66      0.64      0.65       414
+
+avg / total       0.73      0.73      0.73      1059
+
+Activation tanh, Solver sgd, Random state 0, tols 0.100000, Warm start True
+[[539 106]
+ [259 155]]
+             precision    recall  f1-score   support
+
+          1       0.68      0.84      0.75       645
+          2       0.59      0.37      0.46       414
+
+avg / total       0.64      0.66      0.63      1059
+
+Activation tanh, Solver sgd, Random state 0, tols 0.100000, Warm start False
+[[539 106]
+ [259 155]]
+             precision    recall  f1-score   support
+
+          1       0.68      0.84      0.75       645
+          2       0.59      0.37      0.46       414
+
+avg / total       0.64      0.66      0.63      1059
+
+Activation tanh, Solver sgd, Random state 0, tols 0.010000, Warm start True
+[[540 105]
+ [252 162]]
+             precision    recall  f1-score   support
+
+          1       0.68      0.84      0.75       645
+          2       0.61      0.39      0.48       414
+
+avg / total       0.65      0.66      0.64      1059
+
+Activation tanh, Solver sgd, Random state 0, tols 0.010000, Warm start False
+[[540 105]
+ [252 162]]
+             precision    recall  f1-score   support
+
+          1       0.68      0.84      0.75       645
+          2       0.61      0.39      0.48       414
+
+avg / total       0.65      0.66      0.64      1059
+
+Activation tanh, Solver sgd, Random state 0, tols 0.001000, Warm start True
+[[519 126]
+ [195 219]]
+             precision    recall  f1-score   support
+
+          1       0.73      0.80      0.76       645
+          2       0.63      0.53      0.58       414
+
+avg / total       0.69      0.70      0.69      1059
+
+Activation tanh, Solver sgd, Random state 0, tols 0.001000, Warm start False
+[[519 126]
+ [195 219]]
+             precision    recall  f1-score   support
+
+          1       0.73      0.80      0.76       645
+          2       0.63      0.53      0.58       414
+
+avg / total       0.69      0.70      0.69      1059
+
+Activation tanh, Solver sgd, Random state 0, tols 0.000100, Warm start True
+[[521 124]
+ [148 266]]
+             precision    recall  f1-score   support
+
+          1       0.78      0.81      0.79       645
+          2       0.68      0.64      0.66       414
+
+avg / total       0.74      0.74      0.74      1059
+
+Activation tanh, Solver sgd, Random state 0, tols 0.000100, Warm start False
+[[521 124]
+ [148 266]]
+             precision    recall  f1-score   support
+
+          1       0.78      0.81      0.79       645
+          2       0.68      0.64      0.66       414
+
+avg / total       0.74      0.74      0.74      1059
+
+Activation tanh, Solver sgd, Random state 1, tols 0.100000, Warm start True
+[[532 113]
+ [340  74]]
+             precision    recall  f1-score   support
+
+          1       0.61      0.82      0.70       645
+          2       0.40      0.18      0.25       414
+
+avg / total       0.53      0.57      0.52      1059
+
+Activation tanh, Solver sgd, Random state 1, tols 0.100000, Warm start False
+[[532 113]
+ [340  74]]
+             precision    recall  f1-score   support
+
+          1       0.61      0.82      0.70       645
+          2       0.40      0.18      0.25       414
+
+avg / total       0.53      0.57      0.52      1059
+
+Activation tanh, Solver sgd, Random state 1, tols 0.010000, Warm start True
+[[498 147]
+ [254 160]]
+             precision    recall  f1-score   support
+
+          1       0.66      0.77      0.71       645
+          2       0.52      0.39      0.44       414
+
+avg / total       0.61      0.62      0.61      1059
