@@ -1,5 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import re
-from features_extraction.emoji import Emoji
+import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
+from .language_resources import LanguageResources
+from .emoji import Emoji
 
 class FeaturesExtraction:
 
@@ -22,26 +28,18 @@ class FeaturesExtraction:
         return counts_list
 
     @staticmethod
-    def retrieve_feature_position(messages_body, pattern=None):
+    def add_features_ratio(messages_body, pattern1, pattern2):
+        counts_list = list()
 
-        position_list = list()
-        # 0: 0 - 33%
-        # 1: 34% - 66%
-        # 2: 67 - 100%
         for body in messages_body:
-            N = len(body)
-            found_regex = re.search(pattern, body)
+            num = len(re.findall(pattern1, body))
+            denum = len(re.findall(pattern2, body))
+            counts_list.append(0 if not num or not denum else min(num/denum, denum/num))
 
-            if not found_regex:
-                position_list.append(-1)
-            else:
-                relative_position = 100.0 * found_regex.start() / N
+        return counts_list
 
-                if relative_position < 33:
-                    position_list.append(0)
-                elif relative_position < 66:
-                    position_list.append(1)
-                else:
-                    position_list.append(2)
-
-        return position_list
+    @staticmethod
+    def add_tfidf(messages_body, n_low=1, n_up=3):
+        v = TfidfVectorizer(ngram_range=(n_low, n_up), stop_words=LanguageResources.stopwords)
+        x = v.fit_transform(messages_body).todense()
+        return pd.DataFrame(x, columns=v.get_feature_names())

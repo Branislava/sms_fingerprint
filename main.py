@@ -1,82 +1,107 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import sys
-import random
+import time
+
+import matplotlib.pylab as plt
 import numpy as np
-from features_extraction.dataset import Dataset
+import pandas as pd
+from sklearn import model_selection, metrics
+from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
-from sklearn.feature_selection import SelectKBest, f_classif
-from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
+from sklearn.svm import LinearSVC
+
+def batch_classify(X_train, Y_train, X_test, Y_test, verbose = True):
+
+    df_results = pd.DataFrame(data=np.zeros(shape=(no_classifiers, 4)), columns=['classifier', 'train_score', 'test_score', 'training_time'])
+    count = 0
+    for key, classifier in dict_classifiers.items():
+        t_start = time.clock()
+        classifier.fit(X_train, Y_train)
+        t_end = time.clock()
+        t_diff = t_end - t_start
+        train_score = classifier.score(X_train, Y_train)
+        test_score = classifier.score(X_test, Y_test)
+        df_results.loc[count, 'classifier'] = key
+        df_results.loc[count, 'train_score'] = train_score
+        df_results.loc[count, 'test_score'] = test_score
+        df_results.loc[count, 'training_time'] = t_diff
+        if verbose:
+            print("trained {c} in {f:.2f} s".format(c=key, f=t_diff))
+        count += 1
+    return df_results
+
+def modelfit(alg, X_train, y_train, predictors, performCV=True, printFeatureImportance=True, cv_folds=5):
+
+    # fit the algorithm on the data
+    alg.fit(X_train, y_train)
+        
+    # predict training set:
+    dtrain_predictions = alg.predict(X_train)
+    dtrain_predprob = alg.predict_proba(X_train)[:, 1]
+
+    # perform cross-validation:
+    if performCV:
+        cv_score = model_selection.cross_val_score(alg, X_train, y_train, cv=cv_folds, scoring='roc_auc')
+    
+    # print model report:
+    print("\nModel Report")
+    print("Accuracy : %.4g" % metrics.accuracy_score(y_train, dtrain_predictions))
+    print("AUC Score (Train): %f" % metrics.roc_auc_score(y_train, dtrain_predprob))
+    
+    if performCV:
+        print("CV Score : Mean - %.7g | Std - %.7g | Min - %.7g | Max - %.7g" % (np.mean(cv_score), np.std(cv_score), np.min(cv_score), np.max(cv_score)))
+        
+    # print feature importance:
+    if printFeatureImportance:
+        feat_imp = pd.Series(alg.feature_importances_, predictors).sort_values(ascending=False)[:15]
+        feat_imp.plot(kind='bar', title='Feature Importances')
+        plt.ylabel('Feature Importance Score')
+        plt.show()
 
 if __name__ == '__main__':
+    
     if len(sys.argv) < 2:
-        print('Usage: python main.py path_to_xml_file')
+        print('python3.5 main.py dataset/data-sms-reg.csv')
+        print('python3.5 main.py dataset/data-sms-form.csv')
         exit(1)
+    
+    df = pd.read_csv(sys.argv[1])
+    y = df['class']
+    X = df.ix[:, df.columns != 'class']
 
-    # create dataset frame
-    dataset = Dataset(filename=sys.argv[1])
-
-    # training set
-    N = len(dataset.data)
-    training_size = int(0.8 * N)
-    indexes = np.array(range(N))
-    random.shuffle(indexes)
-    training_indexes = indexes[:training_size]
-    test_indexes = indexes[training_size:]
-
-    TMP = random.sample(range(training_size), 1)[0]
-    print(dataset.data['body'].iloc[TMP])
-    print(dataset.data.iloc[TMP])
-
-    # training set - before feature selection
-    X = dataset.data.drop(['address', 'type', 'body'], 1, inplace=False).iloc[training_indexes, :]
-    Y_train = dataset.data['type'].iloc[training_indexes]
-
+    # train/test sets
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+    print('Before feature selection ', np.shape(X_train), np.shape(y_train))
+    
+    # creating model
+    clf = GradientBoostingClassifier()
+    
     # perform feature selection
-    print('...selecting top features')
-    feature_names = X.columns.values
-    select_k_best_classifier = SelectKBest(f_classif, k='all')
-    select_k_best_classifier.fit_transform(X, Y_train)
-    mask = select_k_best_classifier.get_support()
-    new_features = [feature for bool, feature in zip(mask, feature_names) if bool]
-    print('Selected %d features: %s' % (len(new_features), ', '.join(new_features)))
-
-    # new training set
-    X_train = dataset.data[new_features].iloc[training_indexes, :]
-
-    scaler = StandardScaler()
-    # Fit only to the training data
-    scaler.fit(X_train)
-    X_train = scaler.transform(X_train)
-
-    # Now apply the transformations to the data:
-    x = dataset.data[new_features].iloc[test_indexes, :]
-    X_test = scaler.transform(x)
-    Y_test = dataset.data['type'].iloc[test_indexes]
-
-    activations = ['identity', 'logistic', 'tanh', 'relu']
-    solvers = ['lbfgs', 'sgd', 'adam']
-    max_iter = 1000
-    random_states = [0, 1]
-    tols = [0.1, 0.01, 0.001, 0.0001]
-    warm_starts = [True, False]
-
-    for activation in activations:
-        for solver in solvers:
-            for random_state in random_states:
-                for tol in tols:
-                    for warm_start in warm_starts:
-                        print('Activation %s, Solver %s, Random state %d, tols %f, Warm start %r'
-                              % (activation, solver, random_state, tol, warm_start))
-
-                        # multi-layer perceptron classifier
-                        mlp = MLPClassifier(solver=solver, alpha=1e-5, hidden_layer_sizes=(30, 30, 30),
-                                            random_state=random_state, activation=activation,
-                                            tol=tol, warm_start=warm_start)
-
-                        # fitting data
-                        mlp.fit(X_train, Y_train)
-
-                        # predicting labels of unseen samples
-                        predictions = mlp.predict(X_test)
-                        print(confusion_matrix(Y_test, predictions))
-                        print(classification_report(Y_test, predictions))
+    predictors = np.array(X.columns.values)
+    
+    # fitting model
+    clf.fit(X_train, y_train)
+    modelfit(clf, X, y, predictors)
+    
+    # predicting labels
+    y_pred = clf.predict(X_test)
+    print(classification_report(y_test, y_pred))
+    print(confusion_matrix(y_test, y_pred))
+    
+    # trying out different classifiers
+    dict_classifiers = {
+        "Logistic Regression": LogisticRegression(),
+        "Linear SVM": LinearSVC(C=0.1, penalty='l1', dual=False),
+        "Gradient Boosting Classifier": clf,
+        "Random Forest": RandomForestClassifier(n_estimators = 18),
+        "Neural Net": MLPClassifier(alpha = 1),
+    }
+    no_classifiers = len(dict_classifiers.keys())
+    
+    df_results = batch_classify(X_train, y_train, X_test, y_test)
+    print(df_results.sort_values(by='test_score', ascending=False))

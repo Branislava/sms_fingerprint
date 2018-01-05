@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 class Emoji:
 
     table = {
@@ -54,9 +57,9 @@ class Emoji:
         'cry_w_nose': (r":-'\(", 'sad'),
 
         ### suprise ###
-        #'suprised_wo_nose_small': (r':o', 'suprised'),
+        'suprised_wo_nose_small': (r':o', 'suprised'),
         #'suprised_wo_nose': (r':O', 'suprised'),
-        #'suprised_w_nose_small': (r':-o', 'suprised'),
+        'suprised_w_nose_small': (r':-o', 'suprised'),
         #'suprised_w_nose': (r':-O', 'suprised'),
 
         ### kiss ###
@@ -83,7 +86,7 @@ class Emoji:
         'tongue_w_nose': (r':-P{2,}', 'tongue'),
         'tongue_w_nose_small': (r':-p{2,}', 'tongue'),
         'tongues_wo_nose_small': (r':p{2,}', 'tongue'),
-        'tongues_w_nose_small': (r':-p{2,}', 'tongue'),
+        'tongues_wo_nose': (r':-P{2,}', 'tongue'),
         #'tongue_w_nose_closed': (r'x-P{2,}', 'tongue'),
         #'tongue_w_nose_small_closed': (r'x-p{2,}', 'tongue'),
         #'tongues_wo_nose_small_closed': (r'xp{2,}', 'tongue'),
@@ -109,7 +112,7 @@ class Emoji:
         #'curly_wo_nose': (r':\}', 'misc'),
         #'curly_w_nose': (r':-\}', 'misc'),
         #'piggy_nose': (r':o\)', 'misc'),
-        #'relax_angle': (r'=\]', 'misc'),
+        'relax_angle': (r'=\]', 'misc'),
 
         #'relax_obliques': (r'=\){2,}', 'misc'),
         #'relax_oblique': (r'=\)', 'misc'),
@@ -121,10 +124,10 @@ class Emoji:
         #'glasses_wo_nose': (r'8\){2,}', 'misc'),
         #'glasses_w_nose': (r'8-\){2,}', 'misc'),
         #'glass_wo_nose': (r'8\)', 'misc'),
-        #'glass_w_nose': (r'8-\)', 'misc'),
+        'glass_w_nose': (r'8-\)', 'misc'),
 
         #'smiley_angel_face_wo_nose': (r'O:\)', 'misc'),
-        #'smiley_angel_face_w_nose': (r'O:-\)', 'misc'),
+        'smiley_angel_face_w_nose': (r'O:-\)', 'misc'),
         #'smiley_angel_face_wo_nose_0': (r'0:\)', 'misc'),
         #'smiley_angel_face_w_nose_0': (r'0:-\)', 'misc')
     }
