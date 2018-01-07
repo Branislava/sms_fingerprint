@@ -33,7 +33,7 @@ def plot_roc(classifier, X, y, k, predictors):
             plt.show()
 
         # Compute ROC curve and area the curve
-        fpr, tpr, thresholds = roc_curve(y[test], probas_[:, 1])
+        fpr, tpr, thresholds = roc_curve(y[test], probas_[:, 1], pos_label=1)
         tprs.append(interp(mean_fpr, fpr, tpr))
         tprs[-1][0] = 0.0
         roc_auc = auc(fpr, tpr)
