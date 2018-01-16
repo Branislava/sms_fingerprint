@@ -10,6 +10,7 @@ from .features_extraction import FeaturesExtraction
 from .language_resources import LanguageResources
 from .regex_features import RegexFeatures
 
+from nltk import word_tokenize
 
 class Dataset:
 

@@ -82,8 +82,18 @@ if __name__ == '__main__':
     k = 5
 
     # CV score
+    print('AUC')
     scores = model_selection.cross_val_score(classifier, X, y, cv=k, scoring='roc_auc')
     print("CV Score : Mean - %.7g | Std - %.7g | Min - %.7g | Max - %.7g" % (np.mean(scores), np.std(scores), np.min(scores), np.max(scores)))
+    
+    print('F1-score')
+    scores = model_selection.cross_val_score(classifier, X, y, cv=k, scoring='f1')
+    print("CV Score : Mean - %.7g | Std - %.7g | Min - %.7g | Max - %.7g" % (np.mean(scores), np.std(scores), np.min(scores), np.max(scores)))
+    
+    print('Accuracy')
+    scores = model_selection.cross_val_score(classifier, X, y, cv=k, scoring='accuracy')
+    print("CV Score : Mean - %.7g | Std - %.7g | Min - %.7g | Max - %.7g" % (np.mean(scores), np.std(scores), np.min(scores), np.max(scores)))
+    
 
     # plotting ROC curve
     plot_roc(classifier, X.as_matrix(), np.array(y), k, np.array(X.columns.values))
