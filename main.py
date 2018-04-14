@@ -91,15 +91,15 @@ if __name__ == '__main__':
             
             # evaluating towards positive class
             pos_label = 0
-            f1_pos.append(f1_score(y[test], y_pred, pos_label=pos_label))
-            prec_pos.append(precision_score(y[test], y_pred, pos_label=pos_label))
-            rec_pos.append(recall_score(y[test], y_pred, pos_label=pos_label))
+            f1_pos.append(f1_score(y[test], y_pred, pos_label=pos_label, average='binary'))
+            prec_pos.append(precision_score(y[test], y_pred, pos_label=pos_label, average='binary'))
+            rec_pos.append(recall_score(y[test], y_pred, pos_label=pos_label, average='binary'))
             
             # evaluating towards negative class
             pos_label = 1
-            f1_neg.append(f1_score(y[test], y_pred, pos_label=pos_label))
-            prec_neg.append(precision_score(y[test], y_pred, pos_label=pos_label))
-            rec_neg.append(recall_score(y[test], y_pred, pos_label=pos_label))
+            f1_neg.append(f1_score(y[test], y_pred, pos_label=pos_label, average='binary'))
+            prec_neg.append(precision_score(y[test], y_pred, pos_label=pos_label, average='binary'))
+            rec_neg.append(recall_score(y[test], y_pred, pos_label=pos_label, average='binary'))
 
             '''
             if feat_plot:
