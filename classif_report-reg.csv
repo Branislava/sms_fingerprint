@@ -1,2 +1,7 @@
 Classifier,Accuracy,Precision (positive class),Recall (positive class),F-score (positive class),Precision (negative class),Recall (negative class),F-score (negative class)
 Baseline & $0.609$  & $0.000$  & $0.000$  & $0.000$  & $0.609$  & $1.000$  & $0.757$ \\\hline
+Linear SVM (C=0.025) & $0.714$  & $0.643$  & $0.612$  & $0.619$  & $0.763$  & $0.779$  & $0.768$ \\\hline
+Linear SVM (C=1) & $0.715$  & $0.641$  & $0.635$  & $0.631$  & $0.769$  & $0.766$  & $0.764$ \\\hline
+RBF SVM & $0.619$  & $0.708$  & $0.049$  & $0.091$  & $0.617$  & $0.984$  & $0.759$ \\\hline
+Neural Net & $0.686$  & $0.656$  & $0.485$  & $0.528$  & $0.723$  & $0.815$  & $0.757$ \\\hline
+Gradient Boosting Classifier & $0.736$  & $0.673$  & $0.641$  & $0.653$  & $0.777$  & $0.796$  & $0.785$ \\\hline
